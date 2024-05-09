@@ -15,12 +15,14 @@ class Production{
   }
 
   // setter
-  public function setVote(float $_vote) : void
+  public function setVote(float $_vote) : string
   {
     if(1 <= $_vote && $_vote <= 10){
       $this -> vote = $_vote;
+      return '';
     }else{
-      var_dump("Incorrect value!");
+      //var_dump("Incorrect value!");
+      return 'Incorrect value';
     }
   }
 
@@ -49,12 +51,28 @@ class Production{
   function __construct($_title, $_language, $_vote){
     $this -> title = $this -> firstLetterCapitalize($_title);
     $this -> language = $this -> trimString($_language);
-    $this -> vote = $this -> setVote($_vote);
+    $this -> setVote($_vote);
 
   }
 
 }
 
-$universal = new Production("jurassic world", "english", 7.9);
+$jurassic = new Production("jurassic park", "english", 7.9);
+$et = new Production("E.T. - L'extra-terrestre", "english", 7.5);
 
-var_dump($universal);
+var_dump($jurassic);
+var_dump($et);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  
+</body>
+</html>
