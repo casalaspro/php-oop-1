@@ -16,7 +16,7 @@ class Movie extends Production
   }
 
   public function getFullProfits(){
-    return $this -> profits . $this -> currency;
+    return  $this -> currency . $this -> profits;
   }
 
   public function getFullLength(){

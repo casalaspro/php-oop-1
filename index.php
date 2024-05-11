@@ -1,6 +1,6 @@
-<?php //require_once __DIR__ . "/Models/Production.php" ?>
-<?php //require_once __DIR__ . "/Models/Movie.php" ?>
-<?php require_once __DIR__ . "/server.php" ?>
+<?php require_once __DIR__ . "/Models/Production.php" ?>
+<?php require_once __DIR__ . "/Models/Movie.php" ?>
+<?php //require_once __DIR__ . "/server.php" ?>
 
 
 <?php 

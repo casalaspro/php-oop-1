@@ -77,6 +77,7 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 
 .card-movie h2:not(:last-child){
